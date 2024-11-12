@@ -1,0 +1,97 @@
+body {
+    background: url(https://img.freepik.com/vetores-premium/modelo-de-plano-de-fundo-padrao-de-quebra-cabeca-do-dia-mundial-da-conscientizacao-do-autismo-quebra-cabeca-colorido-do-dia-mundial-do-autismo_443193-1391.jpg)
+}
+
+header {
+    background-color: darkblue;
+    box-shadow: 0 3px 0 #3b0186;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 0 0 30px;
+    position: static;
+}
+
+.topbar li{
+    display: inline;
+    padding: 10px 30px 10px ;
+}
+
+.header-name {
+    padding: 10px;
+}
+
+.sidebar{
+    width: 80px;
+    height: 100%;
+    background-color: darkblue;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #3b0186;
+    position: fixed;
+    top: 47px;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sidebar.expandir{
+    width: 300px;
+
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding-bottom: 70px;
+}
+
+ul li.item a{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.ativo{
+    background-color: #8789ff;
+}
+
+ul li.item {
+    transition: .2s;
+}
+
+ul li.item:hover{
+    background: #8789ff;
+}
+
+ul li.item a .txt {
+    margin-left: 70px ;
+    transition: .5s;
+    opacity: 0;
+}
+
+.sidebar.expandir .txt{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item a .icon{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.offer__scroll-container {
+    max-height: 43vh;
+    overflow-y: auto;
+}
