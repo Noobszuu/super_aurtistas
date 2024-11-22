@@ -1,0 +1,47 @@
+.login__header {
+    background: linear-gradient(to right, rgb(104, 1, 223), rgb(1, 33, 92));
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+  }
+
+  .login__header img {
+    width: 400px;
+  }
+  
+  .login__input {
+    border: 2px solid #333;
+    border-radius: 8px;
+    color: #000000;
+    font-family: "Doto", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 15px;
+    max-width: 300px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .login__button {
+    background-color: #344db9;
+    border: 3px solid #2b008f;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Doto", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    max-width: 300px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+.login__button:disabled {
+    background-color: #eee;
+    border: 2px solid #969595;
+    color: #aaa;
+    cursor: auto;
+  }
