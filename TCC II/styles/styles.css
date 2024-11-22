@@ -1,22 +1,210 @@
+:root {
+    --headerHeight: 50px;
+    --paddingSideBar: 80px;
+}
 body {
-    background: url(https://img.freepik.com/vetores-premium/modelo-de-plano-de-fundo-padrao-de-quebra-cabeca-do-dia-mundial-da-conscientizacao-do-autismo-quebra-cabeca-colorido-do-dia-mundial-do-autismo_443193-1391.jpg)
+    background: url(https://img.freepik.com/vetores-premium/modelo-de-plano-de-fundo-padrao-de-quebra-cabeca-do-dia-mundial-da-conscientizacao-do-autismo-quebra-cabeca-colorido-do-dia-mundial-do-autismo_443193-1391.jpg);
+    height: calc(100vh - (var(--headerHeight) + 20px));
+    /* vh signifca Viewer port Height */
+}
+
+main {
+  border: solid #3b0186;
 }
 
 header {
     background-color: darkblue;
     box-shadow: 0 3px 0 #3b0186;
+    height: calc(var(--headerHeight) - 10px);
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "bangers", system-ui;
     font-size: 24px;
     padding: 10px;
     border-radius: 0 0 30px;
-    position: static;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.s {
+    color: red;
+    animation: trocaDeCor 2s infinite;
+} 
+
+.u {
+    color: rgb(76, 249, 255);
+    animation: trocaDeCor2 2s infinite;
+}
+
+.p {
+    color: green;
+    animation: trocaDeCor3 2s infinite;
+}
+
+.e {
+    color: yellow;
+    animation: trocaDeCor4 2s infinite;
+}
+
+.r {
+    color: rgb(255, 123, 0);
+    animation: trocaDeCor5 2s infinite;
+}
+
+.a {
+    color: #b595ff;
+    animation: trocaDeCor4 2s infinite;
+}
+
+.t {
+    color: rgb(255, 103, 230);
+    animation: trocaDeCor2 2s infinite;
+}
+
+.i {
+    color: rgb(255, 232, 103);
+    animation: trocaDeCor3 2s infinite;;
+} 
+/*
+.texto-animado {
+    font-weight: bold;
+    animation: trocaDeCor 2s infinite;
+}*/
+
+@keyframes trocaDeCor {
+    0% {
+      color: red;
+    }
+    25% {
+      color: orange;
+    }
+    50% {
+      color: yellow;
+    }
+    75% {
+      color: rgb(0, 247, 255);
+    }
+    100% {
+      color: green;
+    }
+  }
+
+@keyframes trocaDeCor2 {
+    0% {
+        color:  orange;
+      }
+      25% {
+        color: yellow;
+      }
+      50% {
+        color: rgb(0, 247, 255);
+      }
+      75% {
+        color: green;
+      }
+      100% {
+        color: red;
+      }
+}
+@keyframes trocaDeCor3 {
+    0% {
+        color: yellow;
+      }
+      25% {
+        color: rgb(0, 247, 255);
+      }
+      50% {
+        color: green;
+      }
+      75% {
+        color: red;
+      }
+      100% {
+        color: orange;
+      }
+}
+@keyframes trocaDeCor4 {
+    0% {
+        color: rgb(0, 247, 255);
+      }
+      25% {
+        color: green;
+      }
+      50% {
+        color: red;
+      }
+      75% {
+        color: orange;
+      }
+      100% {
+        color: yellow;
+      }
+}
+@keyframes trocaDeCor5 {
+    0% {
+        color: green;
+      }
+      25% {
+        color: red;
+      }
+      50% {
+        color: orange;
+      }
+      75% {
+        color: yellow;
+      }
+      100% {
+        color: rgb(0, 247, 255);
+      }
+}
+
+.topbar {
+    margin-left: 20px;
 }
 
 .topbar li{
     display: inline;
     padding: 10px 30px 10px ;
+    margin-left: 20px;
 }
+
+.music-control button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding-left: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  top: 0;
+}
+
+nav .topbar ul li.music-control button:hover {
+  color: #f0f0f0;
+}
+
+nav .topbar ul li.music-control .icon {
+  display: none; /* Escondido o ícone de música, já que estamos usando os botões */
+}
+
+nav .topbar ul li.music-control .txt {
+  display:flex;
+  align-items: center;
+}
+
+.home :hover{
+  transform: scale(1.04);
+}
+.game :hover{
+  transform: scale(1.04);
+}
+.autism :hover{
+  transform: scale(1.04);
+}
+.project :hover{
+  transform: scale(1.04);
+}
+
 
 .header-name {
     padding: 10px;
@@ -29,7 +217,7 @@ header {
     padding: 40px 0 40px 1%;
     box-shadow: 3px 0 0 #3b0186;
     position: fixed;
-    top: 47px;
+    top: 40px;
     left: 0;
     overflow: hidden;
     transition: 0.5s;
@@ -42,20 +230,20 @@ header {
 
 .btn-expandir{
     width: 100%;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 .btn-expandir > i{
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
     padding-bottom: 70px;
 }
 
 ul li.item a{
     color: white;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-family: "bangers";
+    font-size: 25px;
     padding: 20px 4%;
     display: flex;
     margin-top: 20px;
@@ -72,7 +260,7 @@ ul li.item {
 }
 
 ul li.item:hover{
-    background: #8789ff;
+    background: #4698be;
 }
 
 ul li.item a .txt {
@@ -88,10 +276,58 @@ ul li.item a .txt {
 
 ul li.item a .icon{
     font-size: 30px;
-    margin-left: 10px;
 }
 
 .offer__scroll-container {
-    max-height: 43vh;
+    height: calc(100% - 90px);
     overflow-y: auto;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+#popup-musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo preto transparente */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.5s ease-in-out; /* Suavidade ao aparecer/desaparecer */
+}
+
+#popup-musica.mostrar {
+  opacity: 1;
+}
+
+/* Estilizando o botão "Iniciar Música" dentro da lista */
+#startMusicBtn {
+  background-color: darkblue;
+  height: calc(var(--headerHeight) - 10px);
+  color: white;
+  font-family: "bangers", system-ui;
+  font-size: 24px;
+  position: fixed;
+  top: 0;
+  border-radius: 30px; /* Bordas arredondadas */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+/* Efeito de hover para o botão */
+#startMusicBtn:hover {
+  transform: translateY(-3px);
+}
+
+/* Efeito de click para o botão */
+#startMusicBtn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
