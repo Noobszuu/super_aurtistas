@@ -6,6 +6,10 @@
     <link rel="shortcut icon" href="styles/img/puzzle.ico" type="image/x-icon">
     <title>Projeto</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Doto:wght@100..900&family=Henny+Penny&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles/reset.css">
@@ -17,34 +21,85 @@
     <header>
         
     <nav class="topbar">
-        <ul> <span>Super A(u)rtistas</span>
-            <li class="inicio">
-                <span class="icon"><i class="fa fa-home"></i></span>
-                <span class="txt"><a href="index.html">Início</a></span>
+        <ul> 
+            <span class="s">S</span><span class="u">u</span><span class="p">p</span><span class="e">e</span><span class="r">r</span> <span class="a">A</span><span class="u">(u)</span><span class="r">r</span><span class="t">t</span><span class="i">i</span><span class="s">s</span><span class="t">t</span><span class="a">a</span><span class="s">s</span> 
+            <li class="home">
+                <span class="icon"><a href="index.html"><i class="fa fa-home"></i></a></span>
+                <span class="txt"><a href="index.html">Início</a></span> 
             </li>
-            <li class="jogos">
-                <span class="icon"><i class="fa fa-gamepad"></i></span>
+            <li class="game">
+                <span class="icon"><a href="gamepage.html"><i class="fa fa-gamepad"></i></a></span>
                 <span class="txt"><a href="gamepage.html">Jogos</a></span>
             </li>
-            <li class="autismo">
-                <span class="icon"><i class="fa fa-puzzle-piece"></i></span>
+            <li class="autism">
+                <span class="icon"><a href="autism.html"><i class="fa fa-puzzle-piece"></i></a></span>
                 <span class="txt"><a href="autism.html">Autismo</a></span>
             </li>
-            <li class="inicio">
-                <span class="icon"><i class="fa fa-newspaper"></i></span>
+            <li class="project">
+                <span class="icon"><a href="project.html"><i class="fa fa-newspaper"></i></a></span>
                 <span class="txt"><a href="project.html">Sobre o Projeto</a></span>
             </li>
-        </ul>
-    </nav>
+            <li class="start-music">
+                <button id="startMusicBtn">Iniciar Música</button>
+            </li>
+                <li class="music-control">
+                    <span class="icon"><i class="bi bi-music-note-beamed"></i></span>
+                    <span class="txt">
+                        <button id="prevBtn"><i class="fa fa-backward"></i></button>
+                        <button id="playPauseBtn"><i class="fa fa-play"></i></button>
+                        <button id="nextBtn"><i class="fa fa-forward"></i></button>
+                    </span>
+                </li>
+            </ul>
+            
+        </nav>
 
     </header>
 
-    <main>
-    <div class="project-container">
-        <h1>O PROJETO SUPER A(U)RTISTAS</h1>
+    <audio id="player" autoplay>
+      </audio>
+      
+    <main class="project-container">
+        <div class="offer__scroll-container">
+        <h1>O PROJETO SUPER A(U)RTISTAS</h1> 
         
+        <div class="container-matteo">
+            <img src="styles/img/Matteo.png" alt="Matteo">
+        
+
+        <p> Toda a ideia deste projeto, se deve a um pequeno companheiro meu que fez com que eu pensasse a respeito sobre a inclusão dos autistas em algumas áreas. Este pequeno companheiro meu, é meu irmão Matteo. 
+            Ele tem uma história muito linda, é um verdadeiro guerreiro. 
+            <br>
+            <br>Ele acabou nascendo prematuro por conta de complicações durante a gravidez, mas Deus sempre esteve presente e fez com que tudo desse certo. Com cerca de uns 3 ou 4 anos, fomos atrás de identificar o motivo de alguns atrasos em seu desenvolvimento, foi ai que descobrimos que o Matteo tinha um espectro autista leve/médio.
+            Mas ele sempre foi uma criança muito curiosa, que no início tinha dificuldades até mesmo para aprender palavras, mas que hoje em dia fala mais que um papagaio.
+            <br>
+            <br>Este projeto veio através do meu TCC da faculdade, que pediu por um desenvolvimento de software ou uma pesquisa cientifica. 
+            No início eu estava confuso com o que eu poderia desenvolver, afinal eu quero ser um Engenheiro de Software, então quis me aprofundar em desenvolvimento, mas não tinha ideias. Foi então que depois de um tempo, percebi que não se existem sites especificos de jogos para autistas e olhando meu irmão, eu acabei pensando em um jeito de fazer ele aprender enquanto se diverte. 
+            <br>
+            <br>Fazendo algumas pesquisas, percebi que o número de uso de eletrônicos, multiplicou muito de um tempo pra cá. 
+            Fazendo com que as crianças passassem muito tempo com telas, inclusive, crianças autistas. Com isso, pensei em um 
+            jeito de poder fazer com que essas crianças autistas pudessem ter um site para poder passar um tempo, com joguinhos
+            básicos que podem ajudar no desenvolvimento e aprendizado delas, fazendo o divertimento destes pequenos e também 
+            incluindo eles ao mundo digital de forma direta.
+            <br>
+            <br>O plano inicial era que o site fosse somente com jogos interativos, mas depois de analisar, achei que seria interessante também trazer informações a respeito do autismo, sobre o que ele é, os níveis de autismo, formas de tratamento e cuidados. Assim o site pode entreter as crianças e ajudar os pais com algumas dúvidas a respeito.
+            Acredito que o site tende a crescer mais ainda, vou me dedicar com todo amor e carinho para poder fazer esse site como forma de inclusão e divertimento para as crianças.
+            <br>
+            <br>Em especial eu gostaria de agradecer a algumas pessoas que me ajudaram a desenvolver este projeto, 
+            a minha mãe e meu pai por terem me dado forças para realizar minha faculdade, ao meu irmão por ter servido 
+            de inspiração para poder fazer este projeto maravilhoso em sua homenagem e para todas as crianças autistas, 
+            e por último, ao meu grande amigo Kaian por toda a ajuda e apoio, e a todos os meus queridos amigos, que desde 
+            o início me incentivaram a finalizar esta etapa final do meu TCC.
+            <br>
+            <br>
+            Um abraço e beijo a todos que leram até aqui, espero ter feito você se entreter e aprender mais a respeito. S2 
+            </p>
         </div>
+    </div>
+
     </main>
+
+    <div id="popup-musica">Carregando música...</div>
 
     <nav class="sidebar">
         <div class="btn-expandir">
@@ -53,19 +108,19 @@
 
         <ul>
             <li class="item">
-                <a href="#">
+                <a href="./pages/interactive.html">
                 <span class="icon"><i class="bi bi-hand-index-thumb"></i></span>
                 <span class="txt">Interativos</span>
                 </a>
             </li>
             <li class="item">
-                <a href="#">
+                <a href="./pages/hearing.html">
                 <span class="icon"><i class="bi bi-headphones"></i></span>
                 <span class="txt">Audição</span>
                 </a>
             </li>
             <li class="item">
-                <a href="#">
+                <a href="./pages/coloring.html">
                 <span class="icon"><i class="bi bi-brush"></i></span>
                 <span class="txt">Colorir</span>
                 </a>
@@ -83,6 +138,6 @@
 
     </section>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
