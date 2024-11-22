@@ -1,48 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="styles/img/puzzle.ico" type="image/x-icon">
     <title>Autismo</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Doto:wght@100..900&family=Henny+Penny&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/container.css">
-    
+
 </head>
+
 <body>
     <header>
-        
-    <nav class="topbar">
-        <ul> <span>Super A(u)rtistas</span>
-            <li class="inicio">
-                <span class="icon"><i class="fa fa-home"></i></span>
-                <span class="txt"><a href="index.html">Início</a></span>
-            </li>
-            <li class="jogos">
-                <span class="icon"><i class="fa fa-gamepad"></i></span>
-                <span class="txt"><a href="gamepage.html">Jogos</a></span>
-            </li>
-            <li class="autismo">
-                <span class="icon"><i class="fa fa-puzzle-piece"></i></span>
-                <span class="txt"><a href="autism.html">Autismo</a></span>
-            </li>
-            <li class="inicio">
-                <span class="icon"><i class="fa fa-newspaper"></i></span>
-                <span class="txt"><a href="project.html">Sobre o Projeto</a></span>
-            </li>
-        </ul>
-    </nav>
+
+        <nav class="topbar">
+            <ul>
+                <span class="s">S</span><span class="u">u</span><span class="p">p</span><span class="e">e</span><span
+                    class="r">r</span> <span class="a">A</span><span class="u">(u)</span><span class="r">r</span><span
+                    class="t">t</span><span class="i">i</span><span class="s">s</span><span class="t">t</span><span
+                    class="a">a</span><span class="s">s</span>
+                    <li class="home">
+                        <span class="icon"><a href="index.html"><i class="fa fa-home"></i></a></span>
+                        <span class="txt"><a href="index.html">Início</a></span> 
+                    </li>
+                    <li class="game">
+                        <span class="icon"><a href="gamepage.html"><i class="fa fa-gamepad"></i></a></span>
+                        <span class="txt"><a href="gamepage.html">Jogos</a></span>
+                    </li>
+                    <li class="autism">
+                        <span class="icon"><a href="autism.html"><i class="fa fa-puzzle-piece"></i></a></span>
+                        <span class="txt"><a href="autism.html">Autismo</a></span>
+                    </li>
+                    <li class="project">
+                        <span class="icon"><a href="project.html"><i class="fa fa-newspaper"></i></a></span>
+                        <span class="txt"><a href="project.html">Sobre o Projeto</a></span>
+                </li>
+                <li class="start-music">
+                    <button id="startMusicBtn">Iniciar Música</button>
+                </li>
+                <li class="music-control">
+                    <span class="icon"><i class="bi bi-music-note-beamed"></i></span>
+                    <span class="txt">
+                        <button id="prevBtn"><i class="fa fa-backward"></i></button>
+                        <button id="playPauseBtn"><i class="fa fa-play"></i></button>
+                        <button id="nextBtn"><i class="fa fa-forward"></i></button>
+                    </span>
+                </li>
+            </ul>
+            
+        </nav>
 
     </header>
 
-    <main>
-        <div class="autism-container"> 
-            <div class="offer__scroll-container">
-            <h1>COMO FUNCIONA O AUTISMO</h1>
+    <audio id="player" autoplay>
+      </audio>
+
+    <main class="autism-container">
+        <div class="offer__scroll-container">
+            <h1>O QUE É O AUTISMO</h1>
+
+            <p>O transtorno do espectro autista (TEA), também conhecido como autismo, é um distúrbio do
+                neurodesenvolvimento que tem como caracteristica seu desenvolvimento inusitado, alguns comportamentos
+                incomuns, déficits de atenção,
+                comunicação e em relação a interação social, alguns padrões comportamentais estereotipados e
+                repetitivos, que pode mostrar alguns interesses e atividade específicos em seu dia a dia, hipo ou
+                hipersensibilidade a alguns estímulos sensoriais.
+                <br>
+                <br>
+                Ele pode estar presente desde o nascimento ou começo da infãncia e existem diversos tipos de Autismo,
+                como o Autismo Infantil Precoce, Autismo Infantil, Autismo de Kanner, Autismo Atípico, entre outros.
+                Alguns sinais podem ser vistos nos primeiros meses de vida, mas o diagnóstico normalmente é determinado
+                aos 2 ou 3 anos de idade. O autismo é encontrado grande parte no sexo masculino.
+            </p>
+
+            <h2>CAUSA</h2>
+
+            <p>As causa ainda não são totalmente conhecidas,
+                as pesquisas científicas sempre foram concentradas no estudo da predisposição genética,
+                verificando se poderia ocorrer algumas mutações no desenvolvimento do feto na gestação,
+                e a herança genética que é passada de pais para filhos. 
+                <br>Contudo, algumas evidência mostram que
+                as causas hereditárias iriam explicar apenas metade do risco de desenvolver TEA (Autismo).
+                Vários outros fatores podem acarretar em um desenvolvimento, como estresse, complicações na gravidez,
+                infecções, exposição a substancias nocivas e desequilibrios metabólicos também tem um peso na
+                possibilidade
+                de desenvolver.</p>
+
+            <h2>Características do Autismo</h2>
+
+            <p>O autismo acaba afetando o modo que o indivíduo se comporta, tanto que os primeiros sinais podem ser
+                vistos quando ainda são bebes de poucos meses. Mas no contexto geral, uma criança ou pessoa com espectro
+                autista apresenta alguns sintomas, como:
+                <ul class="text-autism">
+                    <li>º Dificuldade em se comunicar, as vezes optando por linguagem de sinais, linguagem corporal, uso
+                        repetitivo da linguagem e com bloqueios para começar e manter uma conversa;</li>
+                    <li>º Alteração no comportamento, como manias, apego exagerado a sua rotina, interesse intenso por coisas
+                        específicas, ações repetitivas, sensibilidade sensorial e dificuldade de imaginação;
+                    </li>
+                    <li>º Dificuldade para interagir socialmente, como expressar suas próprias emoções, fazer amigos, manter
+                        contato visual, gestos e expressão facial;</li>
+                </ul>
+                
+                <p>Existe alguns níveis em relação ao autismo, dividido em 3 graus, sendo o primeiro o mais leve e o
+                terceiro o mais grave.
+                <br>
+                O grau 1 de suporte apresenta alguns sintomas leves, que podem não impedir de estudar, trabalhar e se
+                relacionar com outros indivíduos. 
+                <br>
+                O grau 2 de suporte, tem um menor grau de independência mas precisa de auxílio para poder fazer funções
+                do dia a dia, como tomar banho ou fazer sua refeição.
+                <br>
+                O grau 3 de suporte, já o grau que vai apresentar mais dificuldades graves e costuma precisar de atenção
+                e apoio especializado ao longo de toda sua vida.
+                <br>
+                <br>
+                Estes graus são rotulados no Manual Diagnóstico e Estatístico de Transtornos Mentais DSM-5.
+                Porém, o autismo não apresenta somente coisas negativas, tanto que o diagnóstico pode mostrar que o
+                indivíduo com espectro autista pode ter facilidade para aprender visualmente, graças a sua atenção aos
+                detalhes e à exatidão; capacidade de memorizar acima da média e também muita concentração em uma área de
+                interesse específica por um período longo.
+                <br>
+                <br>
+                Cada pessoa com o espectro irá se desenvolver de uma maneira particular, com seus conjunto de sintomas
+                variados e sua própria característica. E isso vai influenciar como cada um se relaciona, se comporta e
+                se expressa.
+            </p>
+
+            <h2>Diagnóstico</h2>
+
+            <p>Conforme foi dito anteriormente, os primeiros sinais podem ser vistos quando ainda são bebês, entre 1 a 3
+                anos de vida, mesmo que possam ser detectados antes ou depois disso, caso os atrasos de desenvolvimento
+                sejam mais sutis ou mais graves. A partir dos 12 meses (1 ano), as crianças autistas podem não apontar
+                com seu dedinho, apresentar um interesse bem especifico por objetos, contato visual passa a ser evitado
+                e acabam ignorando quando são chamadas. Também é importante informar que existem casos bem raros de
+                regressão no desenvolvimento, que são normalmente identificados após pelo menos 2 anos de
+                desenvolvimento.
+                <br>
+                <br>
+                Com 18 meses (1 ano e meio) pode ser feito uma avaliação com um profissional especializado, como um
+                psiquiatra pediátrico ou neuropediatra. O diagnóstico se faz por meio da observação direta do
+                comportamento e os pais e cuidadores participam de uma entrevista, que pode adicionar o teste com escala
+                M-CHAT.
+                <br>
+                <br>
+                Só é confirmado quando a criança ou pessoa apresenta as características principais do autismo. A
+                condição pode ser apresentada em graus separados, que acaba fazendo com que os sinais possam ter
+                variações. Um exemplo disso é que o autismo leve pode acabar levando mais tempo para poder ser
+                diagnosticado, porque acaba sendo confundido com outros comportamentos comuns, como timidez e falta de
+                atenção.
+                <br>
+                <br>
+                Indivíduos autistas podem apresentar sintomas adeptos em graus diferentes, como atraso na linguagem,
+                surtos nervoso e agressividade, habilidade cognitiva fora do normal (que pode ser para mais ou para
+                menos) fora outras condições associadas.
+                <br>
+                <br>
+                Graças ao diagnóstico, podemos identificar que tipo de tratamento a criança necessita de acordo com seu
+                grau. Com o acompanhamento adequado, os sintomas tendem a melhorar ao longo da vida, melhorando tanto a
+                qualidade de vida do indivíduo quanto a da família.
+            </p>
+
+            <h2>Tratamento</h2>
+
+            <p>Ainda não há remédios específicos para poder tratar o autismo em si, por mais que seja um prioridade nas
+                pesquisas. Mas, existem alguns medicamentos que podem auxiliar em alguns comportamentos, como
+                agressividade, insônia, hiperatividade, ansiedade, depressão e falta de atenção. O mais aconselhado, é
+                que seja feito um acompanhamento médico multidisciplinar, com psiquiatra, neurologista, fonoaudiólogo,
+                pediatra, entre outros. A conduta depende do quão intenso é o grau e da idade do paciente e há a
+                necessidade de ser decidido com os pais.
+                <br>
+                <br>
+                Os tratamentos servem para poder testar e aprimorar as habilidades comunicativas, sociais,
+                organizacionais e adaptativas. Existem jogos para poder incentivar a interação com outra pessoa, alguns
+                exercícios de comunicação, manutenção e aprendizado de novas habilidades e apoio a atitudes positivas
+                para contrapor problemas de comportamento. As avaliações costumam ser realizadas a cada 3 ou 6 meses,
+                para compreender as mudanças que precisam ser feitas na abordagem ou na intesidade do tratamento.
+                <br>
+                <br>
+                Algo que é necessário e muito importante no tratamento, é o treinamento com os pais. Ele é fundamental
+                pois traz diversos benefícios na maneira que deve se comportar, nas suas habilidades e em como
+                socializar melhor. Fora que também é recomendado um acompanhamento psicológico para a familia, já que o
+                processo pode acabar gerando um desgaste emocional por conta do que o distúrbio pode provocar.
+            </p>
+
+            <h2>Personagens Autistas</h2>
+
+            <p>Existem alguns personagens
+                que podem ser relacionados ao espectro autista e alguns que os autistas amam só por existirem.
+                Aqui temos alguns exemplos:</p>
+
+            <style>
+                .personas {
+                    display: flex;
+                    gap: 30px;
+                    margin: 30px;
+                }
+
+                .persona {
+                    display: flex;
+                    justify-content:center;
+                    align-items: end;
+                    width: 120px;
+                    gap: 10px;
+                    cursor: pointer;
+                    transition: 1s;
+                    margin-left: 50px;
+                }
+                .persona .title {
+                    display: block;
+                    width: 100px;
+                }
+
+                img {
+                    width: 200px;
+                    max-width: none !important;
+                }
+
+                .persona:hover {
+                    width: 400px;
+                }
+
+                .persona:hover>.content {
+                    display: block;
+                    opacity: 1 !important;
+                }
+
+                .content {
+                    opacity: 0;
+                    transition: 2s;
+                    left: 120px;
+                    display: none;
+                    text-decoration: 1px underline solid;
+                    width: 200px;
+                    overflow-wrap: break-word;
+                    text-align: left;
+                    overflow-x: auto;
+                    height: 300px;
+                }
+            </style>
+
+    <div id="popup-musica">Carregando música...</div>
+    
+            <div class="personas">
+                <div class="persona">
+                    <div class="head">
+                        <span class="title">Sonic</span>
+                        <img src="./styles/img/sonic.png" alt="">
+                    </div>
+                    <div class="content">
+                        SONIC THE HEDGEHOG
+                        <br>    
+                        <br>
+                        Um personagem muito querido por indivíduos com TEA, é o Sonic. 
+                        Um ouriço azul, que tem uma super velocidade incrível. 
+                        Ele tem uma turma da qual faz parte e tem outros personagens bem interessantes que 
+                        fazem as crianças se apaixonarem por todos.
+                    </div>
+                </div>
+                <div class="persona">
+                    <div class="head">
+                        <span class="title">André</span>
+                        <img src="./styles/img/Andre.png" alt="">
+                    </div>
+                    <div class="content">
+                        André Turma da Monica
+                        <br>
+                        <br>
+                        Temos o André da Turma da Mônica, que foi visto pela primeira vez em 2003, 
+                        no gibi chamado “Um Amiguinho Diferente”. Ele é um menino autista que não interage muito 
+                        com os outros, mas faz parte de algumas aventuras.
+                    </div>
+                </div>
+                <div class="persona">
+                    <div class="head">
+                        <span class="title">Júlia</span>
+                        <img src="./styles/img/Julia.png" alt="">
+                    </div>
+                    <div class="content">
+                        Júlia Vila Sésamo
+                        <br>
+                        <br>
+                        A Júlia também é um bom exemplo, ela faz parte do Vila Sésamo, 
+                        uma série que foi sucesso no Brasil e que hoje é exibida na PBS e HBO, 
+                        ela foi mostrada pela primeira vez em 2017.
+                    </div>
+                </div>
+                <div class="persona">
+                    <div class="head">
+                        <span class="title">Bruno</span>
+                        <img src="./styles/img/Bruno.png" alt="">
+                    </div>
+                    <div class="content">
+                        Bruno, Thomas e Seus Amigos
+                        <br>
+                        <br>
+                        Bruno, de Thomas e seus Amigos, que foi integrado ao desenho em 2022. 
+                        Ele é um vagão de frenagem que fica no fundo dos trens. Por isso ele acaba tendo 
+                        uma perspectiva completamente diferente de todos os outros.
+                    </div>
+                </div>
+                <div class="persona">
+                    <div class="head">
+                        <span class="title">Shawn</span>
+                        <img src="./styles/img/Shawn.png" alt="">
+                    </div>
+                    <div class="content">
+                        Shawn Murphy, The Good Doctor
+                        <br>
+                        <br>
+                        Shawn é um médico incrível, que tem um conhecimento esplêndido na área onde atua, 
+                        porém, sofre com as dificuldades de se relacionar e interagir com as pessoas. 
+                        Ele é um autista com síndrome de Savant, mas no decorrer da série, ele consegue 
+                        controlar suas emoções e passa a equilibrar as coisas.
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -55,27 +337,27 @@
 
         <ul>
             <li class="item">
-                <a href="#">
-                <span class="icon"><i class="bi bi-hand-index-thumb"></i></span>
-                <span class="txt">Interativos</span>
+                <a href="./pages/interactive.html">
+                    <span class="icon"><i class="bi bi-hand-index-thumb"></i></span>
+                    <span class="txt">Interativos</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="./pages/hearing.html">
+                    <span class="icon"><i class="bi bi-headphones"></i></span>
+                    <span class="txt">Audição</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="./pages/coloring.html">
+                    <span class="icon"><i class="bi bi-brush"></i></span>
+                    <span class="txt">Colorir</span>
                 </a>
             </li>
             <li class="item">
                 <a href="#">
-                <span class="icon"><i class="bi bi-headphones"></i></span>
-                <span class="txt">Audição</span>
-                </a>
-            </li>
-            <li class="item">
-                <a href="#">
-                <span class="icon"><i class="bi bi-brush"></i></span>
-                <span class="txt">Colorir</span>
-                </a>
-            </li>
-            <li class="item">
-                <a href="#">
-                <span class="icon"><i class="bi bi-gear"></i></span>
-                <span class="txt">Configurações</span>
+                    <span class="icon"><i class="bi bi-gear"></i></span>
+                    <span class="txt">Configurações</span>
                 </a>
             </li>
         </ul>
@@ -85,6 +367,7 @@
 
     </section>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
